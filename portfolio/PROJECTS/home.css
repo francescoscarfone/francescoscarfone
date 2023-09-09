@@ -255,4 +255,7 @@ body{
         .sottosottoexp{
             top: 8%;
         }
+        .immagini video{
+            pointer-events: all;
+        }
   }
