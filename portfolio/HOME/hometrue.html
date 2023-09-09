@@ -114,7 +114,7 @@
   $(document).ready(function() {
     const numSections = 23; // Numero totale di sezioni
     const sectionWidth = $(document).width() / numSections; // Larghezza di ogni sezione
-
+    $('.image-container:not(:first)').hide();
     $(document).on('mousemove', function(e) {
         const x = e.clientX;
         const sectionIndex = Math.floor(x / sectionWidth);
