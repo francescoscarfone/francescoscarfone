@@ -1,0 +1,168 @@
+<html>
+<head>
+    <link rel="stylesheet" href="hometrue.css">
+    <link rel="stylesheet" href="../general.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body id="body">
+<div id="aboutt">
+<div class="sinistra size">
+<div class="name">Francesco Scarfone</div>
+<div class="category">Visual designer</div>
+</div>
+<div class="centro size">
+<div class="dati">
+<div class="instagram"></div>
+<div class="mail"></div>
+<div class="Linkedin"></div>
+</div>
+</div>
+<div class="centrosinistra">
+  <div class="curriculum"><a>Curriculum Vitae</a></div>
+  </div>
+<div class="testo">
+  Passionate and creative designer with an endless desire to grow, to learn, to question certainties, changing them or consolidating them when necessary.My passion for art and design is the certainty that moves most of my life choices.I have always thought that Design is the perfect reconciliation between creativity and rationality, the key to give a form to everything that has no form. To understand the deep conceptual value underlying the design, and then to bring it out,to give it an appearance, which has not only aesthetic value but is able to trigger necessary emotions.
+</div>
+</div>
+<div class="contatti">
+ <div id="wow">Mail<div id="mail"><a href="mailto:frao.scar18@gmail.com">frao.scar18@gmail.com</a></div><div id="wow">Phone<div id="phone"><a href="tel:+393347352605">+39 3347352605</a></div></div><div id="wow">Instagram<div id="ig1"><a href="https://www.instagram.com/fra.scr/">@fra.scr</a></div><div id="ig2"><a href="https://www.instagram.com/frasc.art/">@frasc.art</a></div></div></div>
+</div>
+<div class="image-container" id="image1">
+  <img src="../pics/gif/0039.png" alt="Immagine 1" class="ciao">
+</div>
+<div class="image-container" id="image2">
+  <img src="../pics/gif/0040.png" alt="Immagine 2" class="ciao">
+</div>
+<div class="image-container" id="image3">
+  <img src="../pics/gif/0041.png" alt="Immagine 3" class="ciao">
+</div>
+<div class="image-container" id="image4">
+  <img src="../pics/gif/0042.png" alt="Immagine 4" class="ciao">
+</div>
+<div class="image-container" id="image5">
+  <img src="../pics/gif/0043.png" alt="Immagine 5" class="ciao">
+</div>
+  <div class="image-container" id="image6">
+<img src="../pics/gif/0044.png" alt="Immagine 6" class="ciao">
+ </div>
+ <div class="image-container" id="image7">
+  <img src="../pics/gif/0045.png" alt="Immagine 7" class="ciao">
+   </div>
+<div class="image-container" id="image8">
+  <img src="../pics/gif/0046.png" alt="Immagine 8" class="ciao">
+     </div>
+<div class="image-container" id="image9">
+   <img src="../pics/gif/0047.png" alt="Immagine 9" class="ciao">
+       </div>
+<div class="image-container" id="image10">
+   <img src="../pics/gif/0048.png" alt="Immagine 10" class="ciao">
+         </div>
+<div class="image-container" id="image11">
+  <img src="../pics/gif/0049.png" alt="Immagine 11" class="ciao">
+        </div>
+<div class="image-container" id="image12">
+  <img src="../pics/gif/0050.png" alt="Immagine 12" class="ciao">
+        </div>
+<div class="image-container" id="image13">
+  <img src="../pics/gif/0001.png" alt="Immagine 13" class="ciao">
+        </div>
+<div class="image-container" id="image14">
+  <img src="../pics/gif/0002.png" alt="Immagine 14" class="ciao">
+        </div>
+<div class="image-container" id="image15">
+  <img src="../pics/gif/0003.png" alt="Immagine 15" class="ciao">
+        </div>  
+<div class="image-container" id="image16">
+  <img src="../pics/gif/0004.png" alt="Immagine 16" class="ciao">
+        </div>
+<div class="image-container" id="image17">
+  <img src="../pics/gif/0005.png" alt="Immagine 17" class="ciao">
+        </div>
+<div class="image-container" id="image18">
+  <img src="../pics/gif/0006.png" alt="Immagine 18" class="ciao">
+        </div>
+<div class="image-container" id="image19">
+  <img src="../pics/gif/0007.png" alt="Immagine 19" class="ciao">
+        </div>
+<div class="image-container" id="image20">
+  <img src="../pics/gif/0008.png" alt="Immagine 20" class="ciao">
+        </div>
+<div class="image-container" id="image21">
+  <img src="../pics/gif/0009.png" alt="Immagine 21" class="ciao">
+        </div>
+<div class="image-container" id="image22">
+  <img src="../pics/gif/0010.png" alt="Immagine 22" class="ciao">
+        </div>
+<div class="image-container" id="image23">
+  <img src="../pics/gif/0011.png" alt="Immagine 23" class="ciao">
+        </div>
+<!-- Aggiungi altre div per le altre immagini -->
+<div class="menu">
+  <div class="voce" id="voce1"><img src="../ABOUT@0.png" id="about"></div>
+  <div class="voce" id="voce2"><img src="../PROJECTS@0.png" id="projects"></div>
+  <div class="voce" id="voce3"><img src="../CONTACTS@0.png" id="contacts"></div>
+</div>
+<div class="sottomenu">
+  <div class="rett rettuno"></div>
+  <a href="../PROJECTS/home.html" class="rett rettdue"></a>
+  <div class="rett retttre"></div>
+</div>
+
+<script src="hometrue.js"></script>
+<script>
+  $(document).ready(function() {
+    const numSections = 23; // Numero totale di sezioni
+    const sectionWidth = $(document).width() / numSections; // Larghezza di ogni sezione
+
+    $(document).on('mousemove', function(e) {
+        const x = e.clientX;
+        const sectionIndex = Math.floor(x / sectionWidth);
+
+        // Nascondi tutte le immagini
+        $('.image-container').hide();
+
+        // Mostra l'immagine corrispondente alla sezione
+        $(`#image${sectionIndex + 1}`).show();
+    });
+  });
+  $(document).ready(function() {
+  // Funzione per aggiornare le altezze dei blocchi
+  function aggiornaAltezzeBlocchi() {
+    var altezzaBlocco1 = $('.testo').height();
+    $('#aboutt').height(altezzaBlocco1);
+  }
+  // Chiamata iniziale per impostare le altezze dei blocchi
+  aggiornaAltezzeBlocchi();
+
+  // Gestore per l'evento resize
+  $(window).resize(function() {
+    aggiornaAltezzeBlocchi();
+  });
+});
+$(document).ready(function() {
+  // Nascondi il secondo blocco all'inizio
+  $('#aboutt').hide();
+  $('.contatti').hide();
+  // Gestisci il click sul pulsante per mostrare/nascondere il secondo blocco
+  $('.rettuno').click(function() {
+      $('#aboutt').toggle();
+  });
+  $('.retttre').click(function() {
+      $('.contatti').toggle();
+  });
+});
+$(document).ready(function() {
+    var isToggled = false; // Variabile di stato per tenere traccia dello stato dell'animazione
+
+    $('.rettuno').click(function() {
+        if (isToggled) {
+            $('.image-container').animate({ top: '-20%' }, 'medium');
+        } else {
+            $('.image-container').animate({ top: '5%' }, 'medium');
+        }
+        isToggled = !isToggled; // Cambia lo stato
+    });
+});
+</script>
+</body>
+</html>

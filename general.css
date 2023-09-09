@@ -1,0 +1,10 @@
+@font-face {
+font-family: 'aktiv';
+  src: url('fonts/FTAktual-Book.otf') format('woff2')
+}
+body{
+  width: 100%;
+  margin: 0px;
+  background-color: white;
+  font-family: "aktiv";
+}
