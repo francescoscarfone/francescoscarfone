@@ -1,3 +1,4 @@
+
 a{
     text-decoration: none;
     color: red;
@@ -163,7 +164,7 @@ z-index: 3;
             padding-right: 10px;
             box-sizing: border-box;
         }
-        . .centrosinistra{
+        .centrosinistra{
             padding-left: 30px;
             display: none;
         }
