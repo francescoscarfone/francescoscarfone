@@ -132,8 +132,24 @@
     var altezzaBlocco1 = $('.testo').height();
     $('#aboutt').height(altezzaBlocco1);
   }
+  function aggiornaAltezzeBlocchi2() {
+  var altezzaBlocco2 = $('.contatti').height();
+  $('#aboutt').height(altezzaBlocco2);
+}
+
+function eseguiSuCellulare() {
+  if (window.innerWidth <= 768) { // Puoi regolare il valore 768 in base alle tue esigenze
+    aggiornaAltezzeBlocchi2();
+  }
+}
+
+// Chiama la funzione iniziale
+eseguiSuCellulare();
+
+// Aggiungi un listener per ridimensionamento della finestra per chiamare la funzione se necessario
+window.addEventListener('resize', eseguiSuCellulare);
   // Chiamata iniziale per impostare le altezze dei blocchi
-  aggiornaAltezzeBlocchi();
+  aggiornaAltezzeBlocchi2();
 
   // Gestore per l'evento resize
   $(window).resize(function() {
@@ -159,7 +175,7 @@ $(document).ready(function() {
         if (isToggled) {
             $('.image-container').animate({ top: '-20%' }, 'medium');
         } else {
-            $('.image-container').animate({ top: '5%' }, 'medium');
+            $('.image-container').animate({ top: '3%' }, 'medium');
         }
         isToggled = !isToggled; // Cambia lo stato
     });

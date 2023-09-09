@@ -5,6 +5,10 @@ font-family: 'aktiv';
 body{
   width: 100%;
   margin: 0px;
-  background-color: white;
   font-family: "aktiv";
+}
+@media (max-width: 768px) {
+  html{
+    font-size: 12pt;
+  }
 }
