@@ -101,6 +101,11 @@ z-index: 11;
     display: block;
     width: 100%;
 }
+.paddingtop{
+    height: 5%;
+    display: block;
+    width: 100%;
+}
 .paddingbottom{
 display: block;
 width: 100%;

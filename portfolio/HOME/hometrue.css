@@ -135,7 +135,7 @@ z-index: 3;
 }
 @media (max-width: 768px) {
     .menu{
-        height: 35%;
+        height: 30%;
     }
     #voce1{
         padding-right: 2px;
@@ -155,7 +155,7 @@ z-index: 3;
             width: auto;
         }
         .sottomenu{
-            height: 35%;
+            height: 30%;
         }
         .testo{
             padding-top: 10px;
