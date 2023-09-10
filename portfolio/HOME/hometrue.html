@@ -132,16 +132,16 @@
     var altezzaBlocco1 = $('.testo').height();
     $('#aboutt').height(altezzaBlocco1);
   }
+  $(window).on('load', function () {
+  aggiornaAltezzeBlocchi();
+  });
+  $(document).ready(function () {
+  aggiornaAltezzeBlocchi();
+});
   // Gestore per l'evento resize
   $(window).resize(function() {
     aggiornaAltezzeBlocchi();
   });
-});
-$(window).on('load', function () {
-  aggiornaAltezzeBlocchi();
-});
-$(document).ready(function () {
-  aggiornaAltezzeBlocchi();
 });
 $(document).ready(function() {
   // Nascondi il secondo blocco all'inizio
