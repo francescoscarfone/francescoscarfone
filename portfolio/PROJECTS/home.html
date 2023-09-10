@@ -402,16 +402,16 @@ $(document).ready(function() {
     $('.icravepity').height(altezzaBlocco7);
     $('.mariodagrada').height(altezzaBlocco8);
   }
-  $(window).on('load', function () {
-  aggiornaAltezzeBlocchi();
-});
-$(document).ready(function () {
-  aggiornaAltezzeBlocchi();
-});
   // Gestore per l'evento resize
   $(window).resize(function() {
     aggiornaAltezzeBlocchi();
   });
+});
+$(window).on('load', function () {
+  aggiornaAltezzeBlocchi();
+});
+$(document).ready(function () {
+  aggiornaAltezzeBlocchi();
 });
 $(document).ready(function() {
   $(".narrow").click(function() {
