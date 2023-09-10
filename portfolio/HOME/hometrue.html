@@ -112,7 +112,7 @@
 <script src="hometrue.js"></script>
 <script>
   $(document).ready(function() {
-    
+    aggiornaAltezzeBlocchi();
     const numSections = 23; // Numero totale di sezioni
     const sectionWidth = $(document).width() / numSections; // Larghezza di ogni sezione
     $('.image-container:not(:first)').hide();
@@ -133,7 +133,6 @@
     var altezzaBlocco1 = $('.testo').height();
     $('#aboutt').height(altezzaBlocco1);
   }
-  
   // Gestore per l'evento resize
   $(window).resize(function() {
     aggiornaAltezzeBlocchi();
