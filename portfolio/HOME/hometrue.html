@@ -111,6 +111,12 @@
 
 <script src="hometrue.js"></script>
 <script>
+  $(window).on('load', function () {
+  aggiornaAltezzeBlocchi();
+});
+$(document).ready(function () {
+  aggiornaAltezzeBlocchi();
+});
   $(document).ready(function() {
     const numSections = 23; // Numero totale di sezioni
     const sectionWidth = $(document).width() / numSections; // Larghezza di ogni sezione
@@ -127,17 +133,12 @@
     });
   });
   $(document).ready(function() {
+    aggiornaAltezzeBlocchi();
   // Funzione per aggiornare le altezze dei blocchi
   function aggiornaAltezzeBlocchi() {
     var altezzaBlocco1 = $('.testo').height();
     $('#aboutt').height(altezzaBlocco1);
   }
-  $(window).on('load', function () {
-  aggiornaAltezzeBlocchi();
-  });
-  $(document).ready(function () {
-  aggiornaAltezzeBlocchi();
-});
   // Gestore per l'evento resize
   $(window).resize(function() {
     aggiornaAltezzeBlocchi();
