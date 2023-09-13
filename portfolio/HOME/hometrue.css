@@ -11,6 +11,9 @@ font-style: normal;
 font-weight: 500;
 line-height: 79%; /* 38.689px */
 }
+#curriculum{
+    text-decoration: underline;
+}
 .esse{
     letter-spacing: -1.469px;
 }
