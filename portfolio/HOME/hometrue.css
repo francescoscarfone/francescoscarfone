@@ -1,6 +1,18 @@
 body{
     overflow: hidden;
 }
+.logo{
+ padding-left: 10px ;
+ padding-top: 10px;
+color: #F00;
+font-size: 48px;
+font-style: normal;
+font-weight: 500;
+line-height: 79%; /* 38.689px */
+}
+.esse{
+    letter-spacing: -1.469px;
+}
 a{
     text-decoration: none;
     color: red;
@@ -12,127 +24,69 @@ a:visited{
 a:hover{
     text-decoration: none;
 }
-
-#aboutt{
-    color: red;
-    z-index: 2;
-    position: relative;
-    pointer-events: none;
-}
 .image-container{
+    top: 0%;
     display: flex;
     position: absolute;
-    width: 100vw;
-    top: -20vh;
+    width: 100%;
+    height: 100%;
     z-index: 1;
     justify-content: center;
     align-items: center;
     pointer-events: none;
 }
-.ciao{
-    width: 70%;
-    z-index: -3;
-}
-.menu{
-    z-index: 2;
-    width: 100%;
-    height: 40%;
-    position: absolute;
-    bottom: 0;
-    pointer-events: none;
-    box-sizing: border-box;
-}
-.voce{
-    width: 33.33%;
-    height: 100%;
-    float: left;
+.image-container1{
+    top: -3%;
     display: flex;
-   align-items: center;
-   justify-content: center;
-   overflow: hidden;
-   box-sizing: border-box;
-   pointer-events: none;
-}
-#voce1{
-padding-right: 5px;
-}
-#voce2{
-    padding-left: 5px;
-    padding-right: 5px;
-}
-#voce3{
-    padding-left: 5px;
-}
-#about, #projects, #contacts{
-    width: 100%; 
-    height: 100%;
-    image-rendering: pixelated; /* o crisp-edges */
-}
-.sottomenu{
+    position: absolute;
     width: 100%;
-    height: 40%;
-    position: absolute;
-    bottom: 0;
-    z-index: 0;
-}
-.rett{
-    width: 33.33%;
     height: 100%;
-    float: left;
-    box-sizing: border-box;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
 }
-.rett:hover{
-    background-color: #00ff00;
+.seconda{
+    display: none;
 }
-.size{
-    width: 25%;
-    float: left;
-}
-.testo{
-float: left;
-width: 25%;
-z-index: 2;
-}
-.sinistra{
-    position: relative;
-    width: 25%;
-    height: 100%;
-    float: left;
-    box-sizing: border-box;
-}
-.centrosinistra{
-    width: 25%;
-    float: left;
-}
-.centro{
-    position: relative;
-    width: 25%;
-    height: 100%;
-    float: left;
-    box-sizing: border-box;
-}
-.category{
-    position: absolute;
-    bottom: 0px;
-}
-.dati{
-    position: absolute;
-    bottom: 0px; 
+.clearfix {
+    clear: both;
+  }
+.ciao{
+    width: 57%;
+    z-index: -3;
 }
 .contatti{
 color: red;
-position: absolute;
-padding-left: 25%;
-top: 0px;
+position: relative;
+padding-left: 10px;
 z-index: 3;
 }
-#mail, #phone, #ig1, #ig2{
+.Selezione{
+    position: relative;
+    padding-top: 10px;
+    padding-right: 10px;
+    float: right;
+    color: red;
+}
+#mail, #phone, #ig1, #ig2, #about, #projects{
     text-decoration: underline;
 }
-#mail:hover, #phone:hover, #ig1:hover, #ig2:hover{
+#mail:hover, #phone:hover, #ig1:hover, #ig2:hover, #about:hover, #projects:hover{
     background-color: #00ff00;
     cursor: pointer;
 }
+.cia{
+    width: 50%;
+    float: left;
+  }
+  #aboutt{
+    width: 40%;
+    padding-left: 10px;
+    box-sizing: border-box;
+    color: red;
+    display: none;
+  }
 @media (max-width: 768px) {
     .menu{
         height: 30%;

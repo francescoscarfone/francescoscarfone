@@ -1,16 +1,16 @@
 @font-face {
-font-family: 'aktiv';
-  src: url('fonts/FTAktual-Book.otf') format('woff2')
+font-family: 'ibm';
+  src: url('fonts/NeueMontreal-Medium.otf') format('woff2')
 }
 body{
   width: 100%;
+  padding: 0px;
   margin: 0px;
-  font-family: "aktiv";
+  font-family: "ibm";
   line-height: 120%;
   overflow-x: hidden;
+  box-sizing: border-box;
 }
 @media (max-width: 768px) {
-  html{
-    font-size: 12pt;
-  }
+ 
 }

@@ -1,9 +1,11 @@
-
+.font{
+    font-size: 11pt;
+    line-height: 110%;
+}
 a{
     text-decoration: none;
     color: red;
     cursor: pointer;
-    text-decoration: underline;
 }
 a:visited{
     text-decoration: none;
@@ -15,50 +17,9 @@ a:hover{
     position: fixed;
     width: 100%;
     height: 8%;
-    top: 0px;
+    top: 10px;
+    left: 10px;
     z-index: 11;
-}
-.voce{
-    width: 12.5%;
-    height: 100%;
-    float: left;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    box-sizing: border-box;
-}
-.voce img{
-    width: 100%; 
-    height: 100%;
-    image-rendering: crisp-edges; /* o crisp-edges */
-    box-sizing: border-box;
-}
-.voce1{
-padding-right: 5px;
-}
-.voce2{
-    padding-left: 5px;
-    padding-right: 5px;
-
-}
-.voce3{
-    padding-left: 5px;
-
-}
-.voce:hover{
-    background-color: #00ff00;
-}
-.home{
-    position: fixed;
-    width: 25%;
-    height: 8%;
-    bottom: 0px;
-    z-index: 11;
-}
-.linkhome{
-    width: 100%;
-    height: 100%;
 }
 .linkhome img{
     width: 100%;
@@ -69,32 +30,30 @@ padding-right: 5px;
     overflow: hidden;
     box-sizing: border-box;
 }
-.home:hover{
+a .home:hover{
     background-color: #00ff00;
 }
 .narrowwide{
 position: fixed;
-width: 25%;
-height: 8%;
-bottom: 0px;
-right: 0px;
-cursor: pointer;
+top:10px;
+right: 10px;
+width: 50%;
+text-align: right;
 z-index: 11;
+color: red;
 }
-.nwhover img{
-    width: 50%;
-    height: 100%;
-    float: left;
-    box-sizing: border-box;
-}
-.nwhover img:hover{
+.nwhover:hover{
     background-color: #00ff00;
 }
 .size{
-    width: 100%;
+    width: 50%;
+    position: relative;
     box-sizing: border-box;
     height: fit-content;
     z-index: 1;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: inline-block;
 }
 .paddingtop{
     height: 50vh;
@@ -106,78 +65,68 @@ z-index: 11;
     display: block;
     width: 100%;
 }
-.paddingbottom{
-display: block;
-width: 100%;
-}
-.sinistra{
-    position: relative;
-    width: 25%;
-    height: 100%;
-    float: left;
-    box-sizing: border-box;
-}
-.centro{
-    position: relative;
-    width: 25%;
-    height: 100%;
-    float: left;
-    box-sizing: border-box;
-    z-index: 3;
-}
-.centrodestra{
-    width: 25%;
-    float: left;
-}
 .testo{
     position: relative;
-    width: 25%;
+    width: 100%;
+    padding-top: 2%;
     height: fit-content;
-    float: right;
+    float: left;
     box-sizing: border-box;
-    z-index: -1;
+    
+}
+.sopra{
+    display: inline-block;
+}
+.seconda{
+    width: 50%;
+    position: relative;
+    display: inline;
+    float: left;
+    padding-right: 10px;
+    box-sizing: border-box;
 }
 .title{
-    height: 0px;
-}
-.categoria{
-    padding-top: 40%;
-    height: 0;
-}
-.linksabsolute{
-    position: absolute; 
-    left: 0px;
-    bottom: 0px;
-    width: 100%;
+    width: 50%;
+    float: left;
+    position: relative;
+    box-sizing: border-box;
 }
 .links{
+    padding-top: 5%;
+    width: 100%;
     position: relative;
-}
-.link1{
-    width: 33.33%;
-    float: left;
-}
-.link2{
-    width: 66.66%;
     float: left;
     box-sizing: border-box;
 }
-.anno1{
-    width: 100%;
+.link1{
+    width: 50%;
     float: left;
-}
-.teamabsolute{
-    position: absolute; 
-    left: 0px;
-    bottom: 0px;
-    width: 100%;
+    box-sizing: border-box;
 }
 .team{
+    width: 100%;
     position: relative;
+    float: left;
 }
 .team1{
-    width: 100%;
+    width: 50%;
     float: left;
+    box-sizing: border-box;
+}
+.sotto{
+    position: relative;
+    width: 100%;
+
+}
+.categoria, .anno{
+    padding-top: 2%;
+    position: relative;
+    width: 50%;
+    height: auto;
+    float: left;
+}
+.anno{
+    text-align: right ;
 }
 body{
     height:fit-content;
@@ -188,9 +137,10 @@ body{
 .immagini{
     position: relative;
     width: 50%;
-    padding-top: 100px;
-    padding-left: 25%;
-    z-index: 10;
+    height: fit-content;
+    padding-left: 50%;
+    z-index: 0;
+    padding-top: 7%;
 }
 .immagini img{
     padding-top: 10px;
@@ -215,12 +165,12 @@ body{
     display: table;
     clear: both;
   }
-  .sottosottoexp{
+.sottosottoexp{
     width: 100%;
     position: sticky;
-    top: 12%;
+    top: 8%;
     color: red;
-    z-index: 0;
+    z-index: 1;
     box-sizing: border-box;
 }
 .eedai{
@@ -228,39 +178,5 @@ body{
     image-rendering: pixelated; /* o crisp-edges */
 }
 @media (max-width: 768px) {
-    .testo{
-        width: 100%;
-        padding-top: 10px;
-    }
-    .sinistra{
-        width: 33.33%;
-        padding-right: 10px;
-    }
-    .centro{
-        width: 33.33%;
-    }
-    .centrodestra{
-        width: 33.33%;
-    }
-    .menuu, .home, .narrowwide{
-        height: 5%;
-    }
-    .voce1{
-        padding-right: 2px;
-        }
-        .voce2{
-            padding-left: 2px;
-            padding-right: 2px;
-        
-        }
-        .voce3{
-            padding-left: 2px;
-        
-        }
-        .sottosottoexp{
-            top: 8%;
-        }
-        .immagini video{
-            pointer-events: all;
-        }
+    
   }
