@@ -88,44 +88,4 @@ z-index: 3;
     display: none;
   }
 @media (max-width: 768px) {
-    .menu{
-        height: 30%;
-    }
-    #voce1{
-        padding-right: 2px;
-        }
-        #voce2{
-            padding-left: 2px;
-            padding-right: 2px;
-        }
-        #voce3{
-            padding-left: 2px;
-        }
-        .image-container{
-            top: -15%;
-        }
-        .ciao{
-            height: 100vh;
-            width: auto;
-        }
-        .sottomenu{
-            height: 30%;
-        }
-        .testo{
-            padding-top: 10px;
-            width: 100%;
-        }
-        .sinistra, .centro, .centrosinistra{
-            width: 50%;
-            padding-right: 10px;
-            box-sizing: border-box;
-        }
-        .centrosinistra{
-            padding-left: 30px;
-            display: none;
-        }
-        .contatti{
-            width: 50%;
-            padding-left: 50%;
-        }
   }

@@ -178,5 +178,28 @@ body{
     image-rendering: pixelated; /* o crisp-edges */
 }
 @media (max-width: 768px) {
-    
+    .narrowwide{
+        display: none;
+    }
+    .immagini{
+        width: 100%;
+        padding-left: 0%;
+        padding-top: 20%;
+    }
+    .size{
+        width: 100%;
+        padding-top: 15%;
+    }
+    .seconda{
+        width: 50%;
+    }
+    .testo{
+        width: 100%;
+    }
+    .title{
+        width: 50%;
+    }
+    .sottosottoexp{
+        position: relative;;
+    }
   }
