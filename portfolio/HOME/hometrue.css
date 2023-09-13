@@ -43,6 +43,7 @@ z-index: 3;
     padding-right: 10px;
     float: right;
     color: red;
+    text-decoration: none;
 }
 #mail, #phone, #ig1, #ig2{
     text-decoration: underline;
@@ -94,6 +95,9 @@ z-index: 3;
     .lol{
         display: none;
     }
+    .loluno{
+        display: block;
+    }
     .image-container3{
         top: 0%;
         display: flex;
@@ -118,6 +122,12 @@ z-index: 3;
         display: none;
     }
     .ciao1{
+        display: none;
+    }
+    .lol{
+        display: none;
+    }
+    .loluno{
         display: none;
     }
     .image-container{
