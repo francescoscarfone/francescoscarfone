@@ -1,8 +1,8 @@
 .js-anchor-link{
     text-decoration: none;
 }
-.home{
-    text-decoration: none;
+#home{
+    text-decoration: none 
 }
 .font{
     font-size: 11pt;
