@@ -1,16 +1,28 @@
 @font-face {
-font-family: 'aktiv';
-  src: url('fonts/FTAktual-Book.otf') format('woff2')
+font-family: 'ibmmono';
+  src: url('fonts/IBMPlexMono-Medium.ttf') format('woff2')
 }
 body{
   width: 100%;
   margin: 0px;
-  font-family: "aktiv";
+  font-family: "ibmmono";
   line-height: 120%;
   overflow-x: hidden;
+  font-size: 10pt;
+  box-sizing: border-box;
 }
 @media (max-width: 768px) {
-  html{
-    font-size: 12pt;
+  body{
+    font-size: 9pt;
+  }
+  #cv{
+    display: none;
+  }
+  .numero1:hover::after {
+    content: attr(data-testo);
+    position: absolute;
+    left: 20%;
+    top: 0;
+    width: 75%;
   }
 }

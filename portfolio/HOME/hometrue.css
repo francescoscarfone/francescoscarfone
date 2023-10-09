@@ -1,177 +1,115 @@
-body{
-    overflow: hidden;
+.click-effect {
+  background-color: #007bff; /* Change to your desired color */
+  color: white; /* Change to your desired text color */
+  /* Add any other visual changes you want here */
 }
-a{
-    text-decoration: none;
-    color: red;
+.rectclick{
+  position: fixed;
+  z-index: 3;
+  top: 15%;
+  width: 100%;
+  height: 3%;
+  background-color: #00ff00;
+  display: none;
+}
+.space{
+  position: relative;
+  height: 10%;
+}
+#nominativo{
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  color: red;
+}
+.numero1 span a {
+  text-decoration: underline; 
+  color: red;
+}
+.numero1 span a:hover {
+  background-color: #00ff00;
+}
+.numero1 span a:visited {
+  text-decoration: underline; 
+  color: red;
+}
+.colonna-numeri {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .progetto{
+    position: relative;
+    width: 100%;
+  }
+.numero1 {
     cursor: pointer;
+    padding: 5px;
+    padding-top: 0px;
+    position: relative;
+    width: 95%;
+  }
+  .numero{
+    cursor: pointer;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-bottom: 4px;
+    border-bottom: 1px solid rgba(255, 0, 0, 0);
+    position: relative;
+    width: 100%;
+  }
+  .numero1:hover::after {
+    content: attr(data-testo);
+    position: absolute;
+    left: 6%;
+    top: 0;
+    width: 95%;
+  }
+.numero1:hover{
+padding-left: 35px;
 }
-a:visited{
-    text-decoration: none;
-}
-a:hover{
-    text-decoration: none;
+.ciao1, .ciao2, .ciao3, .ciao4, .ciao5, .ciao6, .ciao7, .ciao8, .ciao9{
+  opacity: 0;
 }
 
-#aboutt{
-    color: red;
-    z-index: 2;
-    position: relative;
-    pointer-events: none;
+.progetto{
+  color: red;
+  opacity: 0.5;
 }
-.image-container{
-    display: flex;
-    position: absolute;
-    width: 100vw;
-    top: -20vh;
-    z-index: 1;
-    justify-content: center;
-    align-items: center;
-    pointer-events: none;
+
+.progetto:hover{
+  opacity: 1;
 }
-.ciao{
-    width: 70%;
-    z-index: -3;
+
+.numero1 span{
+  opacity: 0;
 }
-.menu{
-    z-index: 2;
-    width: 100%;
-    height: 40%;
-    position: absolute;
-    bottom: 0;
-    pointer-events: none;
-    box-sizing: border-box;
+
+.numero1 span img{
+  position: fixed;
+  pointer-events: none;
+  z-index: -1;
+  max-height: 100vh;
+  max-width: 100vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-.voce{
-    width: 33.33%;
-    height: 100%;
-    float: left;
-    display: flex;
-   align-items: center;
-   justify-content: center;
-   overflow: hidden;
-   box-sizing: border-box;
-   pointer-events: none;
+.numero1 span video{
+  position: fixed;
+  pointer-events: none;
+  z-index: -1;
+  max-height: 100vh;
+  max-width: 100vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-#voce1{
-padding-right: 5px;
+
+.numero1:hover span{
+  opacity: 1;
 }
-#voce2{
-    padding-left: 5px;
-    padding-right: 5px;
-}
-#voce3{
-    padding-left: 5px;
-}
-#about, #projects, #contacts{
-    width: 100%; 
-    height: 100%;
-    image-rendering: pixelated; /* o crisp-edges */
-}
-.sottomenu{
-    width: 100%;
-    height: 40%;
-    position: absolute;
-    bottom: 0;
-    z-index: 0;
-}
-.rett{
-    width: 33.33%;
-    height: 100%;
-    float: left;
-    box-sizing: border-box;
-}
-.rett:hover{
-    background-color: #00ff00;
-}
-.size{
-    width: 25%;
-    float: left;
-}
-.testo{
-float: left;
-width: 25%;
-z-index: 2;
-}
-.sinistra{
-    position: relative;
-    width: 25%;
-    height: 100%;
-    float: left;
-    box-sizing: border-box;
-}
-.centrosinistra{
-    width: 25%;
-    float: left;
-}
-.centro{
-    position: relative;
-    width: 25%;
-    height: 100%;
-    float: left;
-    box-sizing: border-box;
-}
-.category{
-    position: absolute;
-    bottom: 0px;
-}
-.dati{
-    position: absolute;
-    bottom: 0px; 
-}
-.contatti{
-color: red;
-position: absolute;
-padding-left: 25%;
-top: 0px;
-z-index: 3;
-}
-#mail, #phone, #ig1, #ig2{
-    text-decoration: underline;
-}
-#mail:hover, #phone:hover, #ig1:hover, #ig2:hover{
-    background-color: #00ff00;
-    cursor: pointer;
-}
-@media (max-width: 768px) {
-    .menu{
-        height: 30%;
-    }
-    #voce1{
-        padding-right: 2px;
-        }
-        #voce2{
-            padding-left: 2px;
-            padding-right: 2px;
-        }
-        #voce3{
-            padding-left: 2px;
-        }
-        .image-container{
-            top: -15%;
-        }
-        .ciao{
-            height: 100vh;
-            width: auto;
-        }
-        .sottomenu{
-            height: 30%;
-        }
-        .testo{
-            padding-top: 10px;
-            width: 100%;
-        }
-        .sinistra, .centro, .centrosinistra{
-            width: 50%;
-            padding-right: 10px;
-            box-sizing: border-box;
-        }
-        .centrosinistra{
-            padding-left: 30px;
-            display: none;
-        }
-        .contatti{
-            width: 50%;
-            padding-left: 50%;
-        }
-  }
+/*.uuoo{
+  background-color: #00ff00;
+}*/
+
