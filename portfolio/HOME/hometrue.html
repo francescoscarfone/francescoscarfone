@@ -98,55 +98,8 @@
   <div id="testo-accanto"></div>
   <div class="space"></div>
   <div id="nominativo">Francesco Scarfone</div>
+  <div id="annata">2023</div>
   <script>
-$(document).ready(function() {
-            // Function to handle scroll events
-            function handleScroll() {
-                // Get the current scroll position
-                var scrollPosition = $(window).scrollTop();
-
-                // Define the window height at which you want to trigger the click
-                var windowHeightToTriggerClick = 200; // Adjust this value as needed
-
-                // Define the window height at which you want to remove the "uuoo" class
-                var windowHeightToRemoveClass = 100; // Adjust this value as needed
-
-                // Define the window height at which you want to remove the "uuoo" class
-                var windowHeightToRemoveClassdos = 300; // Adjust this value as needed
-
-                // Get all elements with the specified class
-                var elementsToClick = $('.uu');
-
-                // Loop through the elements and check if they meet the condition
-                elementsToClick.each(function() {
-                    var elementPosition = $(this).offset().top;
-                    if (elementPosition <= scrollPosition + windowHeightToTriggerClick) {
-                        // Trigger a click event on the element
-                        $(this).trigger('click');
-                        // Add a class to the clicked element
-                        $(this).addClass('uuoo');
-                    }
-                    if (elementPosition <= scrollPosition + windowHeightToRemoveClass) {
-                        // Remove the "uuoo" class from the element
-                        $(this).removeClass('uuoo');
-                    }
-
-                    if (elementPosition >= scrollPosition + windowHeightToRemoveClassdos) {
-                        // Remove the "uuoo" class from the element
-                        $(this).removeClass('uuoo');
-                    }
-                });
-            }
-
-            // Add a scroll event listener to the window
-            $(window).on('scroll', handleScroll);
-
-            // Initially, check if any elements are already in the desired position
-            handleScroll();
-        });
-
-
-
     $(document).ready(function() {
       $('.about').hover(function() {
         $('.riga1').css({
