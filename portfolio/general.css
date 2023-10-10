@@ -25,7 +25,4 @@ body{
     top: 0;
     width: 75%;
   }
-  body{
-    pointer-events: none;
-  }
 }
