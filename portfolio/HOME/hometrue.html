@@ -192,8 +192,6 @@ document.addEventListener('DOMContentLoaded', function() {
       if (button.getAttribute('data-state') === 'active') {
         button.setAttribute('data-state', 'inactive');
         testo.style.display = "none";
-
-        // document.body.style.overflow = 'auto';
       } else {
         button.setAttribute('data-state', 'active');
         testo.style.display = "block";
@@ -201,7 +199,7 @@ document.addEventListener('DOMContentLoaded', function() {
       function handleScroll() {
         button.setAttribute('data-state', 'inactive');
         testo.style.display = "none";
-        anteprima.style.display = "none";
+        anteprima.style.opaciry = "0";
     }
     window.addEventListener('scroll', handleScroll);
     });
