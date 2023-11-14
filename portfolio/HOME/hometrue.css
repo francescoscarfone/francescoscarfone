@@ -155,16 +155,31 @@ span{
 }
 @media (max-width: 768px) {
   body{
-    font-size: 8pt;
+    font-size: 8pt !important
   }
   .anteprima{
     max-width: 100vw;
     z-index: -10;
   }
   ul{
-    font-size: 8pt;
+    font-size: 8pt !important
   }
   span{
+    font-size: 8pt;
+  }
+  .selezione{
+    font-size: 8pt;
+  }
+  .selezione span{
+    font-size: 8pt;
+    }
+  .selezioneinizio{
+    font-size: 8pt;
+  }
+  .selezioneinizio .inizio{
+    font-size: 8pt;
+  }
+  .selezioneinizio .inizio span{
     font-size: 8pt;
   }
 }

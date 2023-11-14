@@ -102,40 +102,6 @@
   <div id="nominativo"></div>
   <button id="bottone"><div id="nome">Francesco Scarfone</div><div id="dati">Portfolio 2023</div></button>
   <script>
-    $(document).ready(function() {
-      $('.immagine').hover(
-        function() {
-          var src = $(this).attr('src');
-          $('.anteprima').attr('src', src);
-          $('.anteprima').css('opacity', 1);
-        },
-        function() {
-          $('.anteprima').css('opacity', 0);
-        }
-        );
-    });
-    $(document).ready(function() {
-      $('.video').hover(
-        function() {
-          var src = $(this).attr('src');
-          $('.anteprimaVid').attr('src', src);
-          $('.anteprimaVid').css('opacity', 1);
-        },
-        function() {
-          $('.anteprimaVid').css('opacity', 0);
-        }
-        );
-    });
-    $(document).ready(function() {
-      var $scrollToTopButton = $('#bottone');
-      $scrollToTopButton.click(function() {
-        $('html, body').animate({
-          scrollTop: 0
-        },"slow" );
-      });
-    });
-  </script>
-  <script>
 const elements = document.querySelectorAll('.progetto');
 const elementsdos = document.querySelectorAll('.numeri');
 getWindowActivationHeight();
@@ -205,6 +171,40 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
-  </script>
+</script>
+<script>
+  $(document).ready(function() {
+    $('.immagine').hover(
+      function() {
+        var src = $(this).attr('src');
+        $('.anteprima').attr('src', src);
+        $('.anteprima').css('opacity', 1);
+      },
+      function() {
+        $('.anteprima').css('opacity', 0);
+      }
+      );
+  });
+  $(document).ready(function() {
+    $('.video').hover(
+      function() {
+        var src = $(this).attr('src');
+        $('.anteprimaVid').attr('src', src);
+        $('.anteprimaVid').css('opacity', 1);
+      },
+      function() {
+        $('.anteprimaVid').css('opacity', 0);
+      }
+      );
+  });
+  $(document).ready(function() {
+    var $scrollToTopButton = $('#bottone');
+    $scrollToTopButton.click(function() {
+      $('html, body').animate({
+        scrollTop: 0
+      },"slow" );
+    });
+  });
+</script>
 </body>
 </html>
