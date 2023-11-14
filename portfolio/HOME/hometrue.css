@@ -1,84 +1,147 @@
-
-.space{
-  position: relative;
-  height: 10%;
-}
-#nominativo{
+.anteprima{
   position: fixed;
-  top: 10px;
-  right: 10px;
-  color: red;
+  pointer-events: none;
+  z-index: 30;
+  max-height: 100vh;
+  max-width:50vw;
+  top: 50%;
+  right: 0px;
+  transform: translate(-0%, -50%);
+  opacity: 0;
 }
-#annata{
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
-  color: red;
+.immagine{
+  width: 70px;
+  pointer-events: all;
+  z-index: 16;
+  image-rendering: optimizeSpeed; /* Priorità per una rapida renderizzazione */
+  image-rendering: -moz-crisp-edges; /* Firefox */
+  image-rendering: -o-crisp-edges; /* Opera */
+  image-rendering: -webkit-optimize-contrast; /* Chrome e Safari */
+  image-rendering: optimize-contrast; /* Standard */
+  -ms-interpolation-mode: nearest-neighbor; /* Internet Explorer */
+  image-rendering: pixelated;
 }
-.numero1 span a {
-  text-decoration: underline; 
-  color: red;
+.immagine:hover{
+  cursor: pointer;
 }
-.numero1 span a:hover {
+.contenuto:hover .caption{
   background-color: #00ff00;
 }
-.numero1 span a:visited {
+.caption{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: white;
+}
+.fotogrammetria{
+  position: fixed;
+  pointer-events: none;
+  z-index: -1;
+  max-height: 100vh;
+  max-width: 100vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+a{
   text-decoration: underline; 
-  color: red;
+  color: black;
+  z-index: 12;
+  pointer-events:all;
+  cursor: pointer;
 }
-.colonna-numeri {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .progetto{
-    position: relative;
-    width: 100%;
-  }
-.numero1 {
-    cursor: pointer;
-    padding: 5px;
-    padding-top: 0px;
-    position: relative;
-    width: 95%;
-  }
-  .numero{
-    cursor: pointer;
-    margin-top: 5px;
-    margin-left: 5px;
-    margin-bottom: 4px;
-    border-bottom: 1px solid rgba(255, 0, 0, 0);
-    position: relative;
-    width: 100%;
-  }
-  .numero1:hover::after {
-    content: attr(data-testo);
-    position: absolute;
-    left: 6%;
-    top: 0;
-    width: 95%;
-  }
-.numero1:hover{
-padding-left: 35px;
+ a:hover {
+  background-color: #00ff00;
 }
-.ciao1, .ciao2, .ciao3, .ciao4, .ciao5, .ciao6, .ciao7, .ciao8, .ciao9{
-  opacity: 0;
+button{
+  position: fixed;
+  width: 98.5%;
+  left: 0.75%;
+  bottom: 10px;
+  font-family: monospace;
 }
-
+button #dati{
+  float: right;
+}
+button #nome{
+  float: left;
+}
+#portfolio{
+  position: fixed;
+  right: 10px;
+  bottom: 8px;
+}
+#scorrimento {
+  width: 100%;
+}
+ul{
+  list-style: none;
+  padding-top: 280px;
+  padding-bottom: 600px;
+  padding-left: 0px;
+  width: 100%;
+}
+span{
+  visibility: hidden;
+  pointer-events: none;
+}
+.contenuto{
+  position: absolute;
+  z-index: 10;
+}
+.testo{
+  display: none;
+}
+.button::before {
+  content: '[+]';
+  pointer-events:all;
+  cursor: pointer;
+}
+.button[data-state="active"]::before {
+  content: '[-]';
+  pointer-events:all;
+  
+}
+#colonna-numeri {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
 .progetto{
-  color: red;
+  width: 100%;
+  position: relative;
   opacity: 0.5;
+  color: black;
 }
-
-.progetto:hover{
+.tutti{
+  width: 100%;
+  padding-left: 10px;
+}
+.numeri{
+  padding-left: 25px;
+  pointer-events: none;
+}
+.selezione{
+  padding-left: 60px;
+}
+.selezione span{
+  visibility: visible;
+  }
+.selezioneinizio{
   opacity: 1;
 }
-
-.numero1 span{
-  opacity: 0;
+.selezioneinizio .inizio{
+  padding-left: 60px;
+  border-bottom: 1px solid black;
 }
-
-.numero1 span img{
+.selezioneinizio .inizio span{
+  visibility: visible;
+}
+.testo{
+  margin-right:15px;
+  z-index: 30;
+}
+.testo .fotogrammetria {
   position: fixed;
   pointer-events: none;
   z-index: -1;
@@ -88,18 +151,12 @@ padding-left: 35px;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.numero1 span video{
-  position: fixed;
-  pointer-events: none;
-  z-index: -1;
-  max-height: 100vh;
-  max-width: 100vw;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+@media (max-width: 768px) {
+  body{
+    font-size: 9pt;
+  }
+  .anteprima{
+    max-width: 100vw;
+    z-index: -10;
+  }
 }
-
-.numero1:hover span{
-  opacity: 1;
-}
-

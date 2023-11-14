@@ -1,28 +1,14 @@
 @font-face {
 font-family: 'ibmmono';
-  src: url('fonts/IBMPlexMono-Medium.ttf') format('woff2')
+  src: url('fonts/RobotoMono-Regular.ttf') format('woff2')
 }
 body{
   width: 100%;
   margin: 0px;
-  font-family: "ibmmono";
-  line-height: 120%;
+  font-family: monospace;
+  font-weight: 400;
   overflow-x: hidden;
-  font-size: 12pt;
+  font-size: 10pt;
   box-sizing: border-box;
-}
-@media (max-width: 768px) {
-  body{
-    font-size: 8pt;
-  }
-  #cv{
-    display: none;
-  }
-  .numero1:hover::after {
-    content: attr(data-testo);
-    position: absolute;
-    left: 20%;
-    top: 0;
-    width: 75%;
-  }
+  color: black;
 }
