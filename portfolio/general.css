@@ -13,7 +13,13 @@ body{
   color: black;
 }
 @media (max-width: 780px) {
-  body{
-    font-size: 10pt;
-  }
+body{
+  font-size: 9pt;
+}
+#colonna-numeri{
+  font-size: 9pt;
+}
+nav{
+  font-size: 9pt;
+}
 }
