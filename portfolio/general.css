@@ -12,3 +12,8 @@ body{
   box-sizing: border-box;
   color: black;
 }
+@media (max-width: 780px) {
+  body{
+    font-size: 10pt;
+  }
+}
