@@ -165,7 +165,7 @@ document.addEventListener('DOMContentLoaded', function() {
       function handleScroll() {
         button.setAttribute('data-state', 'inactive');
         testo.style.display = "none";
-        anteprima.style.opaciry = "0";
+        document.querySelectorAll('.anteprima').style.opaciry = "0";
     }
     window.addEventListener('scroll', handleScroll);
     });
@@ -182,18 +182,6 @@ document.addEventListener('DOMContentLoaded', function() {
       },
       function() {
         $('.anteprima').css('opacity', 0);
-      }
-      );
-  });
-  $(document).ready(function() {
-    $('.video').hover(
-      function() {
-        var src = $(this).attr('src');
-        $('.anteprimaVid').attr('src', src);
-        $('.anteprimaVid').css('opacity', 1);
-      },
-      function() {
-        $('.anteprimaVid').css('opacity', 0);
       }
       );
   });
